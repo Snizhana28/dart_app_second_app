@@ -4,6 +4,7 @@ import 'package:logger/logger.dart';
 void main() {
   var logger = Logger();
   try {
+    
     // Demonstration of a function for calculating the sum of numbers in a list
     var nums = [1, 2, 3, 4, 5];
     int resultSum = sum(nums: nums);

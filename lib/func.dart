@@ -37,7 +37,6 @@ List<int> sort({List<int>? nums}) {
   sortedList.sort();
   return sortedList;
 }
-
 int factorial({int? num}) {
   if (num == null) {
     throw Exception('num is null');
