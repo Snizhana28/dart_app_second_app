@@ -6,12 +6,12 @@ void main() {
   try {
     // Demonstration of a function for calculating the sum of numbers in a list
     var nums = [1, 2, 3, 4, 5];
-    var resultSum = sum(nums: nums);
+    int resultSum = sum(nums: nums);
     print('Sum of numbers in the list $nums: $resultSum');
 
     // Demonstration of a function to check the parity of a number
-    var number = 2;
-    var resultIsEven = isEven(nums: number);
+    num number = 2;
+    bool resultIsEven = isEven(nums: number);
     print('Number $number even: $resultIsEven');
 
     // Demonstration of a function for extracting unique items in a collection
@@ -25,13 +25,13 @@ void main() {
     print('Sorted list $numsSort: $resultSort');
 
     // Demonstration of a function for calculating the factorial
-    var numFactorial = 5;
-    var resultFactorial = factorial(num: numFactorial);
+    int numFactorial = 5;
+    int resultFactorial = factorial(num: numFactorial);
     print('Factorial of a number $numFactorial: $resultFactorial');
 
     // Demonstration of a function for determining the number of vowels in a string
-    var str = 'Hello World';
-    var resultCountVowels = countVowels(str: str);
+    String str = 'Hello World';
+    int resultCountVowels = countVowels(str: str);
     print('Number of vowels in a string "$str": $resultCountVowels');
   } catch (e) {
     logger.e(e.toString());

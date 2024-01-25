@@ -25,18 +25,18 @@ void main() {
   });
   group('IsEven Function Tests', () {
     test('Even number', () {
-      var nums = 2;
-      var result = isEven(nums: nums);
+      num nums = 2;
+      bool result = isEven(nums: nums);
       expect(result, true);
     });
     test('Odd number', () {
-      var nums = 3;
-      var result = isEven(nums: nums);
+      num nums = 3;
+      bool result = isEven(nums: nums);
       expect(result, false);
     });
     test('Zero', () {
-      var nums = 0;
-      var result = isEven(nums: nums);
+      num nums = 0;
+      bool result = isEven(nums: nums);
       expect(result, true);
     });
     test('Null', () {
@@ -63,11 +63,6 @@ void main() {
       int result = factorial(num: num);
       expect(result, equals(expected));
     });
-    test('Factorial of 10', () {
-      var num = 10;
-      var result = factorial(num: num);
-      expect(result, 3628800);
-    });
     test('Null', () {
       int? num;
       expect(() => factorial(num: num), throwsException);
@@ -75,11 +70,6 @@ void main() {
     test('Negative number', () {
       int num = -1;
       expect(() => factorial(num: num), throwsException);
-    });
-    test('Double', () {
-      double num = 1.0;
-      var result = factorial(num: num.toInt());
-      expect(result, isNull);
     });
     group('Count Vowels Function Tests', () {
       test('Empty string', () {

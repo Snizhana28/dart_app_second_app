@@ -2,8 +2,8 @@ int sum({List<int>? nums}) {
   if (nums == null) {
     throw Exception('nums is null');
   }
-  var sum = 0;
-  for (var i = 0; i < nums.length; i++) {
+  int sum = 0;
+  for (int i = 0; i < nums.length; i++) {
     sum += nums[i];
   }
   return sum;
@@ -41,9 +41,11 @@ List<int> sort({List<int>? nums}) {
 int factorial({int? num}) {
   if (num == null) {
     throw Exception('num is null');
+  } else if (num < 0) {
+    throw Exception('nums is negative');
   }
-  var result = 1;
-  for (var i = 1; i <= num; i++) {
+  int result = 1;
+  for (int i = 1; i <= num; i++) {
     result *= i;
   }
   return result;
